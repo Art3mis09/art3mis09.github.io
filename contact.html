@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CONTACT US | URALEE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300">
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" type="text/css" media="all" href="assets/css/style-projects.css">
+        
+
+        <!-- Favicon and touch icons -->
+       <link rel="shortcut icon" href="assets/images/logo.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/logo.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/logo.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/logo.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/images/logo.png">
+		
+		<script async defer
+		  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBagNeT4eTey32LxA-J9iBN4rmKQifNKD4&callback=initMap">
+		</script>
+		<style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+    </head>
+
+
+    <body>
+
+        <!-- Header -->
+        
+        <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+            <div class="container">
+        
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand animated fadeInDownBig" href="index.html"><img src="assets/images/mlogo.png" width="180" alt="Office"></a>      
+                </div>
+        
+                <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav pull-right">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a href="team.html">Team</a>
+                        </li>
+                        <li class="active">
+                            <a href="contact.html"><span>Contact</span></a>
+                        </li>
+                    </ul>         
+                </div>
+            </div>
+        </nav>
+
+        <!--End Header -->
+
+
+        <!-- Main Container -->
+
+        <div class="container-fluid-kamn">
+            <div class="row">
+                <div>
+					
+						<div id="map"</div>
+						<script>
+						  function initMap() {
+							var uluru = {lat: 13.128534, lng: 80.215206};
+							var map = new google.maps.Map(document.getElementById('map'), {
+							  zoom: 20,
+							  center: uluru
+							});
+							var marker = new google.maps.Marker({
+							  position: uluru,
+							  map: map
+							});
+						  }
+						</script>
+									             
+                </div>
+                <div class="col-lg-4 col-lg-offset-1">
+                    <h4>Find us at:</h4>
+                    <p class="block-author"> </p>
+                    <p>No 1a, Venkat Nagar,<br> School Road, Kolathur,<br> Chennai-99</p>
+                    <p>Phone:</p>
+                    <em class="block-author">Email: hello@gmail.com </em> <br>
+                    <br>
+                    <p class="lead">Social Link</p><hr>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <a href="#"><img src="assets/img/social-icons/btn_skype.png" alt="Skype"></a>
+                        Call us
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <a href="#"><img src="assets/img/social-icons/btn_facebook.png" alt="Facebook"></a>
+                        Like us
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-3 col-xs-12">
+                        <a href="#"><img src="assets/img/social-icons/btn_twitter.png" alt="Twitter"></a>
+                        Follow us
+                    </div>
+                    <br>
+                </div>
+                <div class="col-lg-5">
+                    <div class="feedback-form">
+          
+                        <div id="contact-response"></div>
+            
+                        <form action="http://templates.designorbital.com/baleen/contact.php" method="post" id="contact-form">
+                            <fieldset>
+                                <div class="form-group form-group-fullname">
+                                    <label class="control-label" for="fullname">NAME *</label>
+                                    <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Enter Your Name">
+                                </div>
+                                <div class="form-group form-group-email">
+                                    <label class="control-label" for="email">E-MAIL *</label>
+                                    <input type="text" class="form-control" name="email" id="email" placeholder="Enter Your E-Mail">
+                                </div>
+                                <div class="form-group form-group-message">
+                                    <label class="control-label" for="message">MESSAGE *</label>
+                                    <textarea class="form-control" name="message" id="message" rows="3"></textarea>
+                                </div>           
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </fieldset>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </div>    
+            
+    <!--End Main Container -->
+
+
+    <!-- Footer -->
+   <footer> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3><i class="fa fa-map-marker"></i> Contact:</h3>
+                    <p class="footer-contact">
+                        No 1a, Venkat Nagar, School Road, Kolathur, Chennai-99<br>
+                        Phone: <br>
+                        Email: hello@gmail.com<br>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3><i class="fa fa-external-link"></i> Links</h3>
+                    <p> <a href="about.html"> About ( Who we are )</a></p>
+                    
+                    <p> <a href="contact.html"> Contact ( Feel free to contact )</a></p>
+                    <p> <a href="projects.html"> Projects ( Applause to us )</a></p>
+                    <p> <a href="team.html"> Team ( Meet the Team )</a></p> 
+                </div>
+              <div class="col-md-4">
+                <h3><i class="fa fa-heart"></i> Socialize</h3>
+                <div id="social-icons">
+                    <a href="#" class="btn-group google-plus">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                      <a href="#" class="btn-group linkedin">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                      <a href="#" class="btn-group twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                      <a href="#" class="btn-group facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </div>
+              </div>    
+        </div>
+      </div>
+    </footer>
+
+    
+     
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+	
+    <script>
+
+
+// ========== END GOOGLE MAP ========== //
+
+var wow = new WOW ({
+	offset:       75,          // distance to the element when triggering the animation (default is 0)
+	mobile:       false,       // trigger animations on mobile devices (default is true)
+});
+wow.init();
+    </script>
+
+  </body>
+</html>
